@@ -31,14 +31,17 @@ class Restaurante:
 
 
     def receber_avaliacao(self, cliente, nota):
+        if 0 <nota<=5:
         #criando umobjeto
-        avaliacao = Avaliacao(cliente, nota)
-        self._avaliacao.append(avaliacao)
+            avaliacao = Avaliacao(cliente, nota)
+            self._avaliacao.append(avaliacao)
+        else:
+            print('Nota inválida, digite uma nota entre 0 e 5.')
 
     @property
     def media_avaliacao(self):
         if not self._avaliacao:
-            return 0
+            return f'O restaurante não tem nenhuma avaliação ainda.'
         soma =sum(avaliacao._nota for avaliacao in self._avaliacao)
         quantidade_de_notas = len(self._avaliacao)
         media = round(soma / quantidade_de_notas,1)
