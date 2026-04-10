@@ -19,24 +19,22 @@ class Livro:
 # Crie uma instância da classe, chame o método emprestar e imprima se o livro está disponível ou não.
     def emprestar(self):
         self.disponivel = False
-# livro1 = Livro('Algoritmos', 2015, 'Felipe Ferraz')
-# livro1.emprestar()
-# # print(livro1.disponivel)
-# livro2 = Livro('Estruturação de dados', 2020, 'Rafael Alves')
 
-# print(livro1)
-# print(livro2)
 
 # 4 Adicione um método estático chamado verificar_disponibilidade à classe Livro que recebe um ano 
 # como parâmetro e retorna uma lista dos livros disponíveis publicados nesse ano.
-    def verificar_disponibilidade(self)
+    @staticmethod
+    def verificar_disponibilidade(ano):
+        livros_disponiveis = [livro for livro in Livro.livros if livro.ano_publicacao == ano and livro.disponivel]
+        return livros_disponiveis
+    
+ano_especifico = 2020
+livros_disponiveis_ano = Livro.verificar_disponibilidade(ano_especifico)
+print(f"Livros disponíveis em {ano_especifico}: {livros_disponiveis_ano}")
 
-# 5 Crie um arquivo chamado biblioteca.py e importe a classe Livro neste arquivo.
 
-# 6 No arquivo biblioteca.py, empreste o livro chamando o método emprestar e imprima se o livro 
-# está disponível ou não após o empréstimo.
 
-# 7 Crie um arquivo chamado main.py, importe a classe Livro e, no arquivo main.py, instancie dois objetos 
-# da classe Livro e exiba a mensagem formatada utilizando o método str.
+
+
 
 
