@@ -4,3 +4,11 @@
 
 # Diante deste problema, ajude Paulo criando um programa que automatize essa operação, 
 # permitindo listar os pedidos e remover o último item automaticamente.
+
+pedidos =  ['Hamburger', 'suco', 'refrigerante', 'sobremesa']
+
+def remover():
+    pedidos.pop()
+    return pedidos
+
+remover()

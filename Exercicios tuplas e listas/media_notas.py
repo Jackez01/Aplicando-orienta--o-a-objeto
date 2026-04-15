@@ -5,3 +5,13 @@
 
 # Para isso, ajude a professora a criar um programa que receba as notas 
 # finais de todos os alunos e calcule a média da turma.
+
+#corta a virgula e espaço
+notas = input('Digite as notas separadas por virgulas: ').split(', ')
+
+notas = [float(nota) for nota in notas]
+
+#soma os indices das notas e divide pela quantidade de indices
+media = sum(notas) / len(notas)
+
+print(media)

@@ -1,13 +1,4 @@
-voluntarios = []
+dados = input('Digite os alunos separados por virgulas: ').split(', ')
 
-
-pedido = input('Digite o nome do novo voluntário: ')
-
-while True:
-    pedido = input('Digite o nome do novo voluntário: ')
-    if pedido.lower() == 'sair':
-        break
-    voluntarios.append(pedido)
-
-
-print(voluntarios)
+for i in range(0, len(dados), 3):
+    

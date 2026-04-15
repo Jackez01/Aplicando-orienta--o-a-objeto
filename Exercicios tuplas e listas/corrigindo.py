@@ -6,3 +6,10 @@
 
 # Como você escreveria um programa que solicite o nome errado, o nome correto 
 # e atualize a lista exibindo a nova classificação ao final?
+
+lista_jogaadores = ['Bruno', ' Rogerio',  'Nicolle']
+
+nome_incorreto = input('Digite o nome incorreto: ')
+nome_correto = input('Digite o nome correto: ')
+
+for

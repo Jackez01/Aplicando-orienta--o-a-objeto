@@ -4,3 +4,13 @@
 
 # Para ajudá-lo, como você criaria um programa que ler as informações dos estoques
 # e gera um relatório com todos os produtos juntos?
+
+estoque1 = ['Maça', 'banana']
+estoque2 = ['suco', 'leite']
+
+
+#extend adiciona os itens individualmente, se usasse append iria ficar uma lista dentro de outra
+#poderia usar tuplas também
+estoque1.extend(estoque2)
+
+print(estoque1)

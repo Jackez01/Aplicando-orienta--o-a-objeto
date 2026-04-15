@@ -6,3 +6,10 @@
 
 # Considerando a lista inicial de eventos, crie um programa que permita ao
 # organizador ordená-los, de forma que a lista final siga a sequência correta.
+
+eventos_registrados  =  ['Palestra1', 'Palestra2', 'Abertura', 'Encerramento']
+
+eventos_registrados.reverse()
+
+
+print(f'A lista ordenada fica assim: {eventos_registrados}')
