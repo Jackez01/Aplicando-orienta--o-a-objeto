@@ -1,0 +1,1 @@
+# Joana é gerente de projetos e precisa consolidar as listas de tarefas de duas equipes distintas. Após unir as listas, ela quer remover uma tarefa específica informada pelo usuário. Sua tarefa é criar um programa que realize essa operação.
