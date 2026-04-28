@@ -7,3 +7,13 @@
 # Uma relação completa com o nome e a idade de cada um.
 
 # Sua tarefa é criar esse programa com base nas informações fornecidas.
+
+participantes = {'Mariana': 20, 'Carlos': 32, 'Beatriz': 28, 'Rafael': 35}
+
+print(f'Os participantes são: {', '.join(participantes.keys())}.')
+print(f'As idades são: {', '.join(str(idade) for idade in participantes.values())}')
+
+print(f'Participantes e suas idades:')
+
+for nome, idade in participantes.items():
+    print(f'{nome}: {idade} anos.')
